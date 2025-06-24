@@ -24,3 +24,10 @@ def profile():
 # @app.put()
 # @app.patch()
 # @app.delete()
+
+# CRUD (5)
+# Create
+# Read
+# Update
+# Delete
+# Scan
