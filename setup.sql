@@ -103,16 +103,33 @@ UPDATE user SET
 
 
 3. DELETE
-DELETE from userJD; 
+DELETE from user; 
 
 
 
-4. CHANGE RECORDS???
--- CRUD(S)
--- READ
--- ALL info stored in sandbox.db, retrieve data
+4. CHANGE RECORDS
 SELECT * FROM user; 
-SELECT id, first_name, is_online FROM user; 
+SELECT id, last_name, first_name, hobbies, id FROM user; 
 -- separate attributes with comma
 SELECT * FROM user WHERE first_name = "HODOR"; 
 
+
+BONUS:
+CREATE
+INSERT INTO user(
+    Vehicle_Name,
+    Vehicle_VIN, 
+    Vehicle_Make, 
+    Vehicle_Model, 
+    Vehicle_Year, 
+    Vehicle_Condition, 
+    Vehicle_Color
+) VALUES (
+    "Bob", "Pearl", "Genie",
+    "12345789", "369369369", "7777777", 
+    "Honda", "Ford", "Ford", 
+    "Accord", "Mustang", "Bronco", 
+    "2024", "1969", "2026", 
+    "Great", "Decent", "Good", 
+    "Silver", "Red", "Blue"
+); 
