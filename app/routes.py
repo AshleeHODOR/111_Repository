@@ -13,6 +13,12 @@ def profile():
     }
     return me   #return a dictionary from Flask view function converts to JSON!
 
+
+@app.get("/about_me")
+def about(): 
+    pet_list = ["Hershey", "Pearl", "Nirvana Sue"]
+    return pet_list
+
 #Application
 #Software that has user interface.
 
